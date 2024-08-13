@@ -1,8 +1,8 @@
-let ledoni =JSON.parse(localStorage.codeEntre);
-import{initializeApp}from ledoni[0];
-import{getAnalytics}from ledoni[1];
-import{getDatabase,ref,child,get}from ledoni[2];
+import{initializeApp}from JSON.parse(localStorage.codeEntre)[0];
+import{getAnalytics}from JSON.parse(localStorage.codeEntre)[1];
+import{getDatabase,ref,child,get}from JSON.parse(localStorage.codeEntre)[2];
 
+let ledoni =JSON.parse(localStorage.codeEntre);
 const app=initializeApp(
     {apiKey:ledoni[3],
         authDomain:ledoni[4],
