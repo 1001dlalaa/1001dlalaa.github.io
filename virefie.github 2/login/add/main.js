@@ -2,7 +2,7 @@ import{initializeApp}from"https://www.gstatic.com/firebasejs/9.17.1/firebase-app
 import{getAnalytics}from"https://www.gstatic.com/firebasejs/9.17.1/firebase-analytics.js";
 import{getDatabase,ref,child,get}from"https://www.gstatic.com/firebasejs/9.17.1/firebase-database.js";
 
-let ledoni2 = rslt =JSON.parse(localStorage.codeEntre);
+let ledoni2  =JSON.parse(localStorage.codeEntre);
 let ledoni = ledoni2.split(",");
 
 const app=initializeApp(
