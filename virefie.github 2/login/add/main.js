@@ -1,17 +1,18 @@
-import{initializeApp}from `https://www.gstatic.com/firebasejs/ ${localStorage.codeEntre.split(",")[0]} `;
-import{getAnalytics}from `https://www.gstatic.com/firebasejs/ ${localStorage.codeEntre.split(",")[1]} `;
-import{getDatabase,ref,child,get}from `https://www.gstatic.com/firebasejs/ ${localStorage.codeEntre.split(",")[2]} `;
+import{initializeApp}from"https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
+import{getAnalytics}from"https://www.gstatic.com/firebasejs/9.17.1/firebase-analytics.js";
+import{getDatabase,ref,child,get}from"https://www.gstatic.com/firebasejs/9.17.1/firebase-database.js";
+
 
 let ledoni =JSON.parse(localStorage.codeEntre);
 const app=initializeApp(
-    {apiKey:ledoni[3],
-        authDomain:ledoni[4],
-        databaseURL:ledoni[5],
-        projectId:ledoni[6],
-        storageBucket:ledoni[7],
-        messagingSenderId:ledoni[8],
-        appId:ledoni[9],
-        measurementId:ledoni[10]
+    {apiKey:ledoni[0],
+        authDomain:ledoni[1],
+        databaseURL:ledoni[2],
+        projectId:ledoni[3],
+        storageBucket:ledoni[4],
+        messagingSenderId:ledoni[5],
+        appId:ledoni[6],
+        measurementId:ledoni[7]
     }),
        
     analytics=getAnalytics(app),database=getDatabase(app);
