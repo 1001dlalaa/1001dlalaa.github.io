@@ -1,6 +1,6 @@
 import { app, database, ref, gebi, child, get } from "./main.js";
 import { push, update, remove, set } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-database.js"
-import { getAuth, onAuthStateChanged, signOut,,signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-auth.js";
+import { getAuth, onAuthStateChanged, signOut,signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-auth.js";
 const auth = getAuth(app); const dbRef = ref(database);
 const edtSVG = '<svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="m19.3 8.925-4.25-4.2 1.4-1.4q.575-.575 1.413-.575.837 0 1.412.575l1.4 1.4q.575.575.6 1.388.025.812-.55 1.387ZM17.85 10.4 7.25 21H3v-4.25l10.6-10.6Z"/></svg>';
 let frm = document.forms[0], idUpdt = '', aSn = { valed: {}, Fake: {} }, vUp = { lvrvaled: 0, lvrFake: 0 }, stId, vlFk, emls = [], fcbs = [], ccps = [], sizeOb =ob=> Object.keys(ob).length;
