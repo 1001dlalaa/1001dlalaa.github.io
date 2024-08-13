@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+    if(document.cookie.includes('enter')){
+        window.open('add','_self','','false')
+    }
+    
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="../imgs/logo2.jpg"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>Login</title>
+    <script src="https://kit.fontawesome.com/585fda3aab.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- ---------------------------------------------------------------- -->
+    <!-- ---------------     login   ------------------------------------ -->
+    <!-- ---------------------------------------------------------------- -->
+    <div class="login-box"  >
+        <h2>bonjour </h2>
+       <!--  <p>enter le donni </p> -->
+
+        <form id="enterForm" action="">
+            <div class="form-group">
+                
+            </div>
+            <div class="form-group">
+            <label for="code"> Entrez le code </label>
+                <!-- <i class="fa-solid fa-lock"></i> -->
+                <i class="fa-solid fa-key" ></i>
+                <input   name="code"   required>
+                <p id="errPaswrd" style="color:red;display: none;">كلمة السر خاطئة</p>
+             </div>
+             <input type="submit" class="btn" value="entrer">
+        </form>
+        
+    </div>
+   
+
+    <script src="mn.js"></script>
+</body>
+</html>
