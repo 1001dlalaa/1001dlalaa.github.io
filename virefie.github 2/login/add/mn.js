@@ -9,8 +9,7 @@ let frm = document.forms[0], idUpdt = '', aSn = { valed: {}, Fake: {} }, vUp = {
 
 /* chkili */
 
-let ledoni2 = JSON.parse(localStorage.codeEntre);
-let ledoni = ledoni2.split(",");
+let ledoni = JSON.parse(localStorage.codeEntre);
 
 let email = ledoni[11]  ,password= ledoni[12],datCoki= new Date();
 datCoki.setDate(365);
