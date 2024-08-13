@@ -11,7 +11,7 @@ let frm = document.forms[0], idUpdt = '', aSn = { valed: {}, Fake: {} }, vUp = {
 
 let ledoni = JSON.parse(localStorage.codeEntre);
 
-let email = ledoni[11]  ,password= ledoni[12],datCoki= new Date();
+let email = ledoni[8]  ,password= ledoni[9],datCoki= new Date();
 datCoki.setDate(365);
 signInWithEmailAndPassword(auth, email, password)
 .then(() => {
