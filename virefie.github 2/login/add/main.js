@@ -1,8 +1,7 @@
-import{initializeApp}from"https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
-import{getAnalytics}from"https://www.gstatic.com/firebasejs/9.17.1/firebase-analytics.js";
-import{getDatabase,ref,child,get}from"https://www.gstatic.com/firebasejs/9.17.1/firebase-database.js";
-
-let ledoni  =JSON.parse(localStorage.codeEntre);
+let ledoni =JSON.parse(localStorage.codeEntre);
+import{initializeApp}from ledoni[0];
+import{getAnalytics}from ledoni[1];
+import{getDatabase,ref,child,get}from ledoni[2];
 
 const app=initializeApp(
     {apiKey:ledoni[3],
